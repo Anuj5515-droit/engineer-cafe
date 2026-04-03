@@ -1,0 +1,432 @@
+:root{
+--primary:#0f172a;
+--secondary:#1e293b;
+--accent:#f97316;
+--light:#f8fafc;
+}
+
+body{
+background:var(--light);
+font-family:'Poppins',sans-serif;
+}
+
+header{
+background:#1e1e2f;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:80px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+background-size:cover;
+color:white;
+}
+
+.btn{
+background:#ff9800;
+padding:10px 20px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.feature{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.menu-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+width:220px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+animation:fadeIn .5s;
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
+
+button{
+background:#ff9800;
+color:white;
+border:none;
+padding:8px;
+margin-top:5px;
+cursor:pointer;
+}
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:20px;
+border-radius:10px;
+animation:pop .3s;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(10px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes pop{
+from{transform:scale(.5);}
+to{transform:scale(1);}
+}
+.about-section{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+background:#ffffff;
+}
+
+.about-box, .address-box{
+width:300px;
+background:#f9f9f9;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+animation:fadeIn .6s ease;
+}
+
+.about-box h2, .address-box h2{
+margin-top:0;
+color:#1e1e2f;
+}
+.time-box{
+width:300px;
+background:#f9f9f9;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+animation:fadeIn .6s ease;
+}
+.checkout-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#1e1e2f,#3e3e55);
+}
+
+.checkout-container{
+background:white;
+padding:30px;
+border-radius:15px;
+width:350px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+animation:slideUp .6s ease;
+}
+
+.checkout-container h1{
+margin-top:0;
+}
+
+.total{
+background:#f5f5f5;
+padding:10px;
+border-radius:8px;
+}
+
+.payment-box{
+margin:20px 0;
+}
+
+.pay-option{
+display:block;
+background:#f9f9f9;
+padding:10px;
+margin:8px 0;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.pay-option:hover{
+background:#ffe0b2;
+transform:scale(1.03);
+}
+
+.checkout-btn{
+background:#ff9800;
+color:white;
+padding:12px;
+width:100%;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+.checkout-btn:hover{
+background:#e68900;
+transform:scale(1.05);
+}
+
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.receipt-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#2c2c54,#474787);
+}
+
+.receipt-container{
+background:white;
+padding:30px;
+border-radius:15px;
+width:360px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+animation:fadeIn .6s ease;
+}
+
+.receipt-sub{
+color:#777;
+margin-top:-10px;
+}
+
+.receipt-box{
+background:#f8f8f8;
+padding:15px;
+border-radius:10px;
+margin:15px 0;
+text-align:left;
+}
+
+.receipt-box li{
+padding:6px 0;
+border-bottom:1px dashed #ccc;
+}
+
+.receipt-total{
+background:#fff3e0;
+padding:10px;
+border-radius:8px;
+}
+
+.print-btn{
+background:#ff9800;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+}
+
+.print-btn:hover{
+background:#e68900;
+transform:scale(1.05);
+}
+.cart-list li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f9f9f9;
+padding:8px;
+margin:6px 0;
+border-radius:8px;
+}
+
+.qty-box{
+display:flex;
+align-items:center;
+gap:5px;
+}
+
+.qty-box button{
+padding:3px 8px;
+font-size:12px;
+}
+
+.remove-btn{
+background:red;
+padding:5px;
+border-radius:5px;
+}
+
+.loader{
+border:5px solid #f3f3f3;
+border-top:5px solid #ff9800;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+margin:15px auto;
+display:none;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+/* Mobile Responsive */
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.menu-container{
+flex-direction:column;
+align-items:center;
+}
+
+.checkout-container,
+.receipt-container{
+width:90%;
+}
+
+.about-section{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+.checkout-body,
+.receipt-body{
+padding:15px;
+height:auto;
+}
+
+.cart-list li{
+flex-direction:column;
+gap:8px;
+text-align:center;
+}
+
+.qty-box{
+justify-content:center;
+}
+
+button{
+width:100%;
+}
+
+}
+img{
+max-width:100%;
+height:auto;
+}
+.dark{
+background:#0f172a;
+color:white;
+}
+
+.floating-cart{
+position:fixed;
+bottom:20px;
+right:20px;
+background:var(--accent);
+color:white;
+font-size:24px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+footer{
+background:#1e293b;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+.search-box{
+text-align:center;
+margin:20px 0;
+}
+
+.search-box input{
+width:60%;
+max-width:400px;
+padding:12px 15px;
+border-radius:30px;
+border:1px solid #ddd;
+font-size:16px;
+outline:none;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box input:focus{
+border-color:#f97316;
+}

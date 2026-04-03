@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Engineer Cafe Checkout</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body class="checkout-body">
+
+<div class="checkout-container">
+
+<h1>Engineer Cafe Checkout</h1>
+
+<ul id="cart-items" class="cart-list"></ul>
+
+<div id="loader" class="loader"></div>
+
+<div class="payment-box">
+<h3>Select Payment Method</h3>
+
+<label class="pay-option">
+<input type="radio" name="payment" checked>
+<span>💵 Cash</span>
+</label>
+
+<label class="pay-option">
+<input type="radio" name="payment">
+<span>📱 UPI</span>
+</label>
+
+<label class="pay-option">
+<input type="radio" name="payment">
+<span>💳 Card</span>
+</label>
+</div>
+
+<button class="checkout-btn" onclick="placeOrder()">
+Pay & Place Order
+</button>
+</div>
+
+<a href="checkout.html" class="floating-cart">🛒</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Engineer Cafe Receipt</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body class="receipt-body">
+
+<div class="receipt-container">
+
+<h1>Engineer Cafe ☕</h1>
+<p class="receipt-sub">Order Receipt</p>
+
+<div class="receipt-box">
+<ul id="receipt-items"></ul>
+</div>
+
+<h2 class="receipt-total">
+Total ₹<span id="receipt-total"></span>
+</h2>
+
+<button class="print-btn" onclick="window.print()">
+🧾 Print Receipt
+</button>
+
+</div>
+
+<div id="success-popup" class="popup">
+<div class="popup-content">
+<h2>🎉 Order Successful</h2>
+<p>Thank you for ordering!</p>
+<button onclick="closePopup()">OK</button>
+</div>
+</div>
+
+</body>
+</html>

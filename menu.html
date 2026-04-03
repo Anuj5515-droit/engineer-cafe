@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Engineer Cafe Menu</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Engineer Cafe</h1>
+<a href="checkout.html">Checkout</a>
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="🔍 Search food..." onkeyup="searchMenu()">
+</div>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<h3>Coffee</h3>
+<p>₹50</p>
+<button onclick="addToCart('Coffee',50)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Burger</h3>
+<p>₹80</p>
+<button onclick="addToCart('Burger',80)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567234669003-dce7a7a88821">
+<h3>Sandwich</h3>
+<p>₹60</p>
+<button onclick="addToCart('Sandwich',60)">Add to Cart</button>
+</div>
+
+</div>
+
+</body>
+</html>
